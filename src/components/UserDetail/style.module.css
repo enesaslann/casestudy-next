@@ -1,0 +1,71 @@
+.card {
+    overflow: hidden;
+    box-shadow: 0 2px 20px #e1e5ee;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    transition: transform 200ms ease-in;
+    margin-bottom: 10px;
+    margin-right: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.card .sol {
+    max-width: 30%;
+
+}
+
+.card .sag {
+    max-width: 70%;
+
+}
+
+.card .sag p {
+
+    margin-top: 80px;
+}
+
+.card .image {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #2dc44d;
+}
+
+.card .button {
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
+@media (max-width:992px) {
+    .card {
+        display: grid;
+    }
+
+    .card .image {
+        display: initial;
+    }
+
+    .card .sol {
+        max-width: 100%;
+
+    }
+
+    .card .sag {
+        max-width: 100%;
+
+    }
+
+    .card .sag p {
+
+        margin-top: 30px;
+    }
+
+}

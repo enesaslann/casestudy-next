@@ -1,0 +1,93 @@
+ .card {
+     overflow: hidden;
+     box-shadow: 0 2px 20px #e1e5ee;
+     border-radius: 0.2rem;
+     display: flex;
+     flex-direction: initial;
+     justify-content: space-between;
+     cursor: pointer;
+     transition: transform 200ms ease-in;
+     margin-bottom: 10px;
+     margin-right: 1rem;
+     user-select: none;
+ }
+
+ .card .image {
+     width: 80px;
+     height: 80px;
+     object-fit: cover;
+     display: flex;
+     justify-content: left;
+     text-align: left;
+     border-radius: 100%;
+     margin: 0.7rem;
+     margin-left: 1rem;
+     border: 1px solid #2dc44d;
+ }
+
+ .card .head {
+     padding-top: 1.4rem;
+     margin: 0;
+     text-align: left;
+     margin-left: -14px;
+ }
+
+ .card .title {
+     margin: 0;
+     text-align: left;
+     text-decoration: none;
+     color: black;
+     font-size: 25px;
+ }
+
+ .card .description {
+     text-align: left;
+     margin: 0;
+     font-size: 20px;
+     text-decoration: none;
+     color: black;
+ }
+
+ .card .score {
+     font-weight: bold;
+     margin: 1rem;
+     margin-top: 0.8rem;
+     margin-bottom: 0.8rem;
+     color: #1b2f6f;
+     border-radius: 0.2rem;
+     transition: transparent 200ms ease-in, color 200ms ease-in;
+ }
+
+ .card .score .plus {
+     color: #2dc44d;
+     text-align: center;
+     margin-bottom: 5px;
+     border: 1px solid #2dc44d;
+     border-radius: 30px;
+     height: 20px;
+     width: 20px;
+     user-select: none;
+ }
+
+ .card .score .result {
+     color: #1b2f6f;
+     text-align: center;
+ }
+
+ .card .score .minus {
+     color: #ff3b42;
+     text-align: center;
+     border: 1px solid #ff3b42;
+     border-radius: 30px;
+     height: 20px;
+     width: 20px;
+     margin-top: 5px;
+     user-select: none;
+ }
+
+ @media (max-width:992px) {
+     .card {
+         margin-right: 0;
+     }
+
+ }
